@@ -1,1 +1,55 @@
+header {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #44311d;
+  color: white;
+  text-align: center;
+}
 
+footer {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #44311d;
+  color: white;
+  text-align: center;
+}
+
+img {
+  width: auto;
+  height: 500px;
+}
+
+.imagenesHeader {
+  height: 50px;
+  width: 50px;
+}
+
+.tituloCard {
+  color: white;
+  background-color: #44311d;
+}
+
+@media only screen and (min-width: 50px) and (max-width: 989px) {
+  img {
+    width: auto;
+    height: 250px;
+  }
+  .temporal {
+    height: 200px;
+    width: auto;
+    border: 1px solid;
+    overflow: scroll;
+  }
+}
+
+@media (max-width: 990px) {
+  .temporal {
+    height: 200px;
+    width: auto;
+    border: 1px solid;
+  }
+}

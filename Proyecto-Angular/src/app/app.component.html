@@ -1,2 +1,110 @@
-<p>works!</p>
+<header>
+  <img class="imagenesHeader" src="./assets/cookie.png" alt="png1" />
+  <h1>RECIPES FROM THE WORLD</h1>
+</header>
+<main class="container d-flex flex-wrap justify-content-center gap-5">
+  @for(elemento of todosLosDatos; track elemento.idMeal){
+
+  <div class="card text-center">
+    <div class="card-header fs-2 tituloCard">
+      {{ elemento.strMeal }}
+    </div>
+    <div class="card-body">
+      <div>
+        <img src="{{ elemento.strMealThumb }}" alt="Imagen" />
+      </div>
+      <br />
+      <p>INSTRUCTIONS</p>
+      <p class="card-text temporal">
+        {{ elemento.strInstructions }}
+      </p>
+    </div>
+    <div class="card-footer text-body-secondary">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Ingredients
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Ingredient</th>
+                    <th scope="col">Measure</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>{{ elemento.strIngredient1 }}</td>
+                    <td>{{ elemento.strMeasure1 }}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>{{ elemento.strIngredient2 }}</td>
+                    <td>{{ elemento.strMeasure2 }}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>{{ elemento.strIngredient3 }}</td>
+                    <td>{{ elemento.strMeasure3 }}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>{{ elemento.strIngredient4 }}</td>
+                    <td>{{ elemento.strMeasure4 }}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>{{ elemento.strIngredient5 }}</td>
+                    <td>{{ elemento.strMeasure5 }}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>{{ elemento.strIngredient6 }}</td>
+                    <td>{{ elemento.strMeasure6 }}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">7</th>
+                    <td>{{ elemento.strIngredient7 }}</td>
+                    <td>{{ elemento.strMeasure7 }}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">8</th>
+                    <td>{{ elemento.strIngredient8 }}</td>
+                    <td>{{ elemento.strMeasure8 }}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">9</th>
+                    <td>{{ elemento.strIngredient9 }}</td>
+                    <td>{{ elemento.strMeasure9 }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  }
+</main>
+<footer>
+  <img class="imagenesHeader" src="./assets/skillet.png" alt="png1" />
+</footer>
 <!-- <router-outlet><router-outlet /> -->

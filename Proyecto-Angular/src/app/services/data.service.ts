@@ -8,7 +8,7 @@ export class DataService {
 
   constructor() { }
   
-  API_URL: string = "https://themealdb.com/api/json/v1/1/search.php?s=Arrabiata";
+  API_URL: string = "https://themealdb.com/api/json/v1/1/search.php?f=a";
   
   httpClient = inject(HttpClient);
   
